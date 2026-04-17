@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MayaGuard - Privacy Policy</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, sans-serif;
+            line-height: 1.7;
+            color: #1a1a1a;
+            background: #fafafa;
+            padding: 0 16px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 0 80px;
+        }
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: #111;
+        }
+        .subtitle {
+            color: #666;
+            font-size: 0.95rem;
+            margin-bottom: 32px;
+        }
+        h2 {
+            font-size: 1.35rem;
+            font-weight: 600;
+            margin-top: 36px;
+            margin-bottom: 12px;
+            color: #222;
+        }
+        h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-top: 24px;
+            margin-bottom: 8px;
+            color: #333;
+        }
+        p, li {
+            font-size: 0.95rem;
+            color: #333;
+            margin-bottom: 12px;
+        }
+        ul {
+            padding-left: 24px;
+            margin-bottom: 16px;
+        }
+        li { margin-bottom: 6px; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0 24px;
+            font-size: 0.9rem;
+        }
+        th, td {
+            text-align: left;
+            padding: 10px 14px;
+            border: 1px solid #ddd;
+        }
+        th {
+            background: #f5f5f5;
+            font-weight: 600;
+            color: #222;
+        }
+        td { color: #444; }
+        a { color: #1a73e8; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .highlight {
+            background: #f0f7ff;
+            border-left: 3px solid #1a73e8;
+            padding: 14px 18px;
+            margin: 16px 0;
+            border-radius: 0 6px 6px 0;
+        }
+        .highlight p { margin-bottom: 0; color: #1a4e8a; }
+        .divider {
+            border: none;
+            border-top: 1px solid #e5e5e5;
+            margin: 32px 0;
+        }
+        @media (max-width: 600px) {
+            h1 { font-size: 1.5rem; }
+            h2 { font-size: 1.15rem; }
+            .container { padding: 24px 0 60px; }
+            table { font-size: 0.8rem; }
+            th, td { padding: 8px 10px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Privacy Policy</h1>
+        <p class="subtitle">MayaGuard &mdash; Last updated: April 17, 2026</p>
+
+        <div class="highlight">
+            <p><strong>Summary:</strong> Your data stays yours. MayaGuard stores all sensitive data &mdash; locked app list, vault passwords, intruder photos &mdash; locally on your device. We do not collect, transmit, or sell your personal data. Ads are served by Google AdMob.</p>
+        </div>
+
+        <h2>1. Introduction</h2>
+        <p>This Privacy Policy explains how MayaGuard ("the App", "we", "our") handles your information. MayaGuard is a privacy-first app lock and password vault for Android.</p>
+        <p>By using the App, you agree to the practices described in this policy. If you do not agree, please do not use the App.</p>
+
+        <h2>2. Information We Collect</h2>
+
+        <h3>2.1 Information You Provide</h3>
+        <p>The App allows you to lock apps, store passwords in an encrypted vault, and capture intruder photos. All data you enter is stored <strong>locally on your device</strong> and is never sent to our servers (we do not operate any servers).</p>
+        <p>This includes:</p>
+        <ul>
+            <li>Your list of installed or locked apps</li>
+            <li>Vault entries (passwords, notes, subscriptions)</li>
+            <li>Intruder photos and metadata</li>
+            <li>Unlock attempts and usage patterns</li>
+            <li>PIN, pattern, or biometric preferences</li>
+            <li>App settings and theme preferences</li>
+        </ul>
+        <p>Everything above lives in app-private storage on your device and is wiped when you uninstall.</p>
+
+        <h3>2.2 Information Collected by Third Parties</h3>
+
+        <table>
+            <tr>
+                <th>Service</th>
+                <th>Data Collected</th>
+                <th>Purpose</th>
+            </tr>
+            <tr>
+                <td>Google AdMob</td>
+                <td>Advertising ID, device info, approximate location (from IP), ad interaction data</td>
+                <td>Serving ads within the App</td>
+            </tr>
+        </table>
+
+        <p>If you are in a region covered by GDPR, CCPA, or similar laws, you will see a consent form on first launch where you can choose whether to allow personalised ads. You can change that choice at any time from <strong>Settings &rarr; Privacy options</strong> (when available in your region).</p>
+
+        <h3>2.3 Information We Do NOT Collect</h3>
+        <ul>
+            <li>We do not collect your location or GPS data</li>
+            <li>We do not collect contacts, call logs, or SMS</li>
+            <li>We do not collect browsing history</li>
+            <li>We do not create user accounts or profiles</li>
+            <li>We do not use analytics or tracking services</li>
+            <li>We do not operate any servers that receive your data</li>
+            <li>We do not collect device identifiers (Android ID, IMEI, or advertising ID beyond what Google's AdMob SDK requires)</li>
+        </ul>
+
+        <h2>3. How Your Vault Is Protected</h2>
+        <p>Vault entries are encrypted with <strong>AES-256-GCM</strong>, the same authenticated-encryption standard used by HTTPS. The encryption key is derived from your vault password using <strong>Argon2id</strong> &mdash; a memory-hard key-derivation function (64 MB, 3 iterations, 4 threads) chosen to make brute-force attacks infeasible even on specialised hardware.</p>
+        <p>Both the password and the derived key are wiped from memory after use, and neither ever leaves your device.</p>
+
+        <div class="highlight">
+            <p>We cannot read your vault &mdash; not even if you send us a bug report &mdash; because we have no access to the key and no copy of the data. If you forget your vault password there is no reset: the data is mathematically unrecoverable. That is the intended design.</p>
+        </div>
+
+        <h2>4. Intruder Photos</h2>
+        <p>If you enable the intruder capture feature, the front camera takes a photo after a configurable number of failed unlock attempts. These photos are:</p>
+        <ul>
+            <li>Saved to app-private storage on your device</li>
+            <li><strong>Never uploaded anywhere</strong></li>
+            <li>Viewable and deletable at any time in <strong>Security &rarr; Intruder Gallery</strong></li>
+        </ul>
+        <p>Uninstalling MayaGuard deletes all captured photos.</p>
+
+        <h2>5. Permissions</h2>
+        <p>MayaGuard asks only for what each feature needs, and only when you turn that feature on:</p>
+
+        <table>
+            <tr>
+                <th>Permission</th>
+                <th>Why It's Needed</th>
+                <th>Required?</th>
+            </tr>
+            <tr>
+                <td>Usage Access</td>
+                <td>Detect which app is in the foreground so the lock screen can overlay it</td>
+                <td>Required for app locking</td>
+            </tr>
+            <tr>
+                <td>Display Over Other Apps</td>
+                <td>Draw the lock screen above other apps</td>
+                <td>Required for app locking</td>
+            </tr>
+            <tr>
+                <td>Camera</td>
+                <td>Capture intruder photos after failed unlock attempts</td>
+                <td>Optional &mdash; only if you enable intruder capture</td>
+            </tr>
+            <tr>
+                <td>Notifications</td>
+                <td>Show the persistent foreground-service notification required for background lock enforcement</td>
+                <td>Required on Android 13+</td>
+            </tr>
+            <tr>
+                <td>Battery Optimization Exemption</td>
+                <td>Prevent the OS from killing the lock service</td>
+                <td>Recommended for reliable protection</td>
+            </tr>
+            <tr>
+                <td>Internet</td>
+                <td>Serving ads, checking passwords against breach databases (Have I Been Pwned)</td>
+                <td>Required for ads; breach check is optional</td>
+            </tr>
+        </table>
+
+        <p>None of these permissions are used for data collection. You can revoke any optional permission at any time through your device's Settings.</p>
+
+        <h2>6. Advertising</h2>
+        <p>MayaGuard shows ads from <strong>Google AdMob</strong> to keep the app free. Ads appear sparingly &mdash; you will not see an ad on every launch. When ads are shown, Google's AdMob SDK may collect:</p>
+        <ul>
+            <li>Your device's Advertising ID</li>
+            <li>Approximate location (derived from IP address)</li>
+            <li>General device information (model, OS version)</li>
+            <li>Ad interaction data (views, clicks)</li>
+        </ul>
+        <p>This data is collected and processed by Google in accordance with <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</p>
+        <p>You can opt out of personalized advertising by adjusting your device's ad settings: <strong>Settings &rarr; Google &rarr; Ads &rarr; Opt out of Ads Personalization</strong>.</p>
+
+        <div class="highlight">
+            <p>Ads are never shown during active security flows (lock overlay, biometric gate, intruder capture). Those are trust-critical paths where ads would compromise the user experience.</p>
+        </div>
+
+        <h2>7. Breach Checking</h2>
+        <p>When you use the password breach check feature, a partial hash of your password (the first 5 characters of a SHA-1 hash) is sent to the <a href="https://haveibeenpwned.com/API/v3" target="_blank" rel="noopener">Have I Been Pwned</a> API using their k-anonymity model. Your actual password is <strong>never transmitted</strong> &mdash; only a short hash prefix that matches thousands of other passwords, making it impossible for the service to identify yours.</p>
+
+        <h2>8. Data Storage and Security</h2>
+        <ul>
+            <li>All app lock settings and preferences are stored using Android's DataStore</li>
+            <li>Vault entries are encrypted with AES-256-GCM before storage</li>
+            <li>Intruder photos are stored in the App's private storage directory</li>
+            <li>We do not transmit any data to external servers</li>
+            <li>The App has <code>android:allowBackup="false"</code> to prevent Android system backups of app data</li>
+        </ul>
+
+        <h2>9. Data Retention and Deletion</h2>
+        <ul>
+            <li><strong>Local data:</strong> Stored until you delete it or uninstall the App</li>
+            <li><strong>Intruder photos:</strong> Stored until you delete them via Intruder Gallery, or uninstall the App</li>
+            <li><strong>Vault entries:</strong> Stored until you delete them within the App, or uninstall</li>
+            <li><strong>Uninstalling the App:</strong> Removes all local data (database, vault, intruder photos, preferences) from your device permanently</li>
+        </ul>
+
+        <h2>10. Children's Privacy</h2>
+        <p>MayaGuard is not directed at children under the age of 13. We do not knowingly collect personal information from children. Since we don't collect information from anyone, this is a technical impossibility rather than a policy promise.</p>
+
+        <h2>11. Third-Party Links</h2>
+        <p>The App may display advertisements that link to third-party websites. We are not responsible for the privacy practices of those websites. We encourage you to review their privacy policies before providing any personal information.</p>
+
+        <h2>12. Changes to This Policy</h2>
+        <p>If we ever change what MayaGuard collects, this page will be updated and the change will be reflected in the in-app privacy policy in the same release. Material changes will be called out in the app update's release notes.</p>
+
+        <h2>13. Your Rights</h2>
+        <p>Depending on your jurisdiction, you may have the right to:</p>
+        <ul>
+            <li>Access, correct, or delete your personal data</li>
+            <li>Object to or restrict processing of your data</li>
+            <li>Withdraw consent for personalised ads (via the in-app consent form or device settings)</li>
+        </ul>
+        <p>Since all data is stored locally on your device, you have full control at all times. No request to us is needed to access or delete your data.</p>
+
+        <h2>14. Contact Us</h2>
+        <p>If you have any questions or concerns about this Privacy Policy or the App's data practices, please contact us at:</p>
+        <p><strong>Email:</strong> <a href="mailto:support@krieo.co.za">support@krieo.co.za</a></p>
+
+        <hr class="divider">
+        <p style="color: #999; font-size: 0.85rem; text-align: center;">&copy; 2026 MayaGuard. All rights reserved.</p>
+    </div>
+</body>
+</html>

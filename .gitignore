@@ -1,0 +1,13 @@
+# IDE / editor caches
+.vs/
+.vscode/
+.idea/
+
+# OS junk
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Only HTML files belong in app folders
+*.log
+*.tmp
